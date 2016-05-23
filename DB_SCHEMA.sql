@@ -25,17 +25,6 @@ CREATE UNIQUE INDEX user_email ON users (email);
 -- MySQL 5.5 doesn't have support for DATETIME DEFAULT CURRENT_TIMESTAMP,
 -- so we need triggers!
 
-DELIMITER ;;
+CREATE TRIGGER users_insert_date BEFORE INSERT ON users FOR EACH ROW SET NEW.created = NOW();
 
-CREATE TRIGGER users_insert_date BEFORE INSERT ON users FOR EACH ROW
-BEGIN
-    SET NEW.created = NOW();
-END;;
-
-CREATE TRIGGER users_update_date BEFORE UPDATE ON users FOR EACH ROW
-BEGIN
-    SET NEW.updated = NOW();
-END;;
-
-
-DELIMITER ;
+CREATE TRIGGER users_update_date BEFORE UPDATE ON users FOR EACH ROW SET NEW.updated = NOW();
