@@ -23,6 +23,11 @@ Readme by Michael Andrew (michael.andrew@gladeye.co.nz)
 
 2.  Navigate your browser to http://localhost:8000/ to access the web application.
 
+## Logging Out
+
+*   No logout button has been implemented so you will need to manually clear all cookies for the application then log in
+    again as another user.
+
 ## API
 
 ### List Users
