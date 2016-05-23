@@ -19,9 +19,17 @@ Readme by Michael Andrew (michael.andrew@gladeye.co.nz)
 
 ## Running Development Server
 
+### PHP Development Server
+
 1.  Run `php -S localhost:8000` to start the server. Make sure `php` set in your `PATH` points to your PHP 5.6.x binary.
 
 2.  Navigate your browser to http://localhost:8000/ to access the web application.
+
+### Apache
+
+1.  Set up a vhost in apache (e.g. `vhost.local` and point it to the `public` folder for the site root.
+
+2.  Navigate your browser to http://vhost.local/ to access the web application.
 
 ## Logging Out
 
