@@ -2,10 +2,10 @@
 
 namespace Gladtest;
 
-const GLAD_ROOT = __DIR__ . '/..';
+const GLAD_ROOT = '../';
 
 // Local config
-require_once __DIR__ . '/../config.local.php';
+require_once '../config.local.php';
 
 error_reporting(-1);
 
@@ -17,4 +17,4 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline) {
 });
 
 // Composer autoload
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once '../vendor/autoload.php';
